@@ -1,0 +1,9 @@
+group 'com.solo.damocles'
+description 'damocles lab'
+
+
+dependencies {
+    // https://mvnrepository.com/artifact/io.netty/netty-all
+    compile group: 'io.netty', name: 'netty-all', version: '4.1.31.Final'
+    compile group: 'org.apache.zookeeper', name: 'zookeeper', version: '3.4.13'
+}
