@@ -20,7 +20,7 @@ public class ServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        System.out.println(new Date() + ": 客户端开始登录……");
+        System.out.println(new Date() + ": 客户端开始登录……Master");
         ByteBuf requestByteBuf = (ByteBuf) msg;
 
         Packet packet = PacketCodeC.INSTANCE.decode(requestByteBuf);
@@ -40,8 +40,8 @@ public class ServerHandler extends ChannelInboundHandlerAdapter {
                 System.out.println(new Date() + ": 登录失败!");
             }
             // 登录响应
-            ByteBuf responseByteBuf = PacketCodeC.INSTANCE.encode(ctx.alloc(), loginResponsePacket);
-            ctx.channel().writeAndFlush(responseByteBuf);
+            //ByteBuf responseByteBuf = PacketCodeC.INSTANCE.encode(ctx.alloc(), loginResponsePacket);
+            //ctx.channel().writeAndFlush(responseByteBuf);
         }
     }
 
