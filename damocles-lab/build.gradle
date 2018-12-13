@@ -6,4 +6,6 @@ dependencies {
     // https://mvnrepository.com/artifact/io.netty/netty-all
     compile group: 'io.netty', name: 'netty-all', version: '4.1.31.Final'
     compile group: 'org.apache.zookeeper', name: 'zookeeper', version: '3.4.13'
+    // https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-client
+    compile group: 'org.apache.rocketmq', name: 'rocketmq-client', version: '4.3.2'
 }
